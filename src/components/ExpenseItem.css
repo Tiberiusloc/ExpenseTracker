@@ -1,0 +1,19 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 5%;
+}
+
+.expense-item__price {
+  margin-right: 10%;
+  font-weight: bold;
+}
