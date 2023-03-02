@@ -1,6 +1,7 @@
+import React from "react";
 
-import ExpenseDisplay from "./components/ExpenseDisplay";
-import './components/ExpenseItem.css';
+import ExpenseDisplay from "./components/Expenses/ExpenseDisplay";
+import './components/Expenses/ExpenseItem.css';
 
 function App() {
 
