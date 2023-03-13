@@ -8,7 +8,7 @@ const dummyExpenses = [
     {
       id: 'e1',
       title: 'Add a new expense',
-      amount: 0.01,
+      amount: 0.00,
       date: new Date(),
     },
   ];
@@ -19,9 +19,7 @@ function App() {
 
 
   const addExpenseHandler = expense => {
-    setExpenses(prevExpenses => {
-      return [expense, prevExpenses];
-    } );
+    setExpenses([expense, ...expenses]);
   };
 
   return (
