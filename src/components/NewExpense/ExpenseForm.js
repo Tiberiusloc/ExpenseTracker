@@ -4,7 +4,7 @@ import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
 
-  const { onSaveExpenseData } = props;
+  const { onSaveExpenseData, onShowAddExpenseModal } = props;
 
   const [title, setTitle] = useState('')
   const [amount, setAmount] = useState('')
@@ -57,7 +57,8 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="submit">Add Expense</button>
+        <button onClick={onShowAddExpenseModal}>Cancel</button>
+        <button type="submit">Add Expense</button>       
       </div>
     </form>
   );
